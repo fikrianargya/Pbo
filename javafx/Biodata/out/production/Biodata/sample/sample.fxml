@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="labelBiodataMahasiswa" layoutX="128.0" layoutY="24.0" text="Biodata Mahasiswa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNama" layoutX="39.0" layoutY="76.0" text="Nama">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textNama" layoutX="100.0" layoutY="73.0" prefHeight="26.0" prefWidth="253.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="21.0" />
+            <Label fx:id="labelNim" layoutX="39.0" layoutY="118.0" text="NIM">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textNim" layoutX="126.0" layoutY="116.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="21.0" />
+            <Label fx:id="labelUsia" layoutX="39.0" layoutY="163.0" text="Usia">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textUsia" layoutX="126.0" layoutY="160.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="21.0" />
+            <Label fx:id="labelJurusan" layoutX="41.0" layoutY="210.0" text="Jurusan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textJurusan" layoutX="128.0" layoutY="207.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="21.0" />
+            <Button fx:id="buttonSubmit" layoutX="174.0" layoutY="280.0" mnemonicParsing="false" onAction="#ButtonOnClick" text="Submit" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
